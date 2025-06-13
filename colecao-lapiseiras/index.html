@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Coleção de Lapiseiras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Minha Coleção de Lapiseiras ✏️</h1>
+        
+        <!-- Formulário para adicionar nova lapiseira -->
+        <form id="form-lapiseira">
+            <input type="text" id="marca" placeholder="Marca (ex.: Faber-Castell)" required>
+            <input type="color" id="cor" value="#000000">
+            <input type="text" id="material" placeholder="Material (ex.: Metal/Plástico)">
+            <input type="number" id="grafite" placeholder="Tamanho do grafite (mm)" step="0.1" min="0.1">
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <!-- Filtros -->
+        <div class="filtros">
+            <input type="text" id="filtro-marca" placeholder="Filtrar por marca">
+            <input type="text" id="filtro-material" placeholder="Filtrar por material">
+            <input type="number" id="filtro-grafite" placeholder="Filtrar por grafite (mm)" step="0.1">
+        </div>
+
+        <!-- Lista de lapiseiras (cards) -->
+        <div id="lista-lapiseiras" class="lapiseira-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
